@@ -157,11 +157,12 @@ exit
 
 ## **Step 5 Test**
 ทดสอบเข้า http://localhost:8081 และ http://localhost:8082 เพื่อทดสอบการทำ API  
-GET : http://localhost:<port>/user
-GET : http://localhost:<port>/user/121
+GET : `http://localhost:<port>/user`  
+GET : `http://localhost:<port>/user/<id>`
 
 #### ส่วน API ที่เหลือต้องทดสอบใน POSTMAN  
 Import File POSTMAN : Flask API MySQL.postman_collection.json  
 
-PUT : http://localhost:<port>/user/new  
-DELETE : http://localhost:<port>/user/121
+POST : `http://localhost:<port>/user/new`  
+PUT : `http://localhost:<port>/user/<id>`   
+DELETE : `http://localhost:<port>/user/<id>`  
